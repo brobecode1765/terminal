@@ -22,7 +22,7 @@ int main(void) {
         FD_ZERO(&fdset);
         FD_SET(masterfd, &fdset);
 
-        
+        select(masterfd + 1, &fdset )
     }
     printf("Hello, World!\n");
     return EXIT_SUCCESS;
